@@ -5,14 +5,21 @@
 }
 
 @include respond-to ('medium') {
-    .app-wrapper {
-        margin: 0vh 10vw;
+    //.app-wrapper {
+    //    margin: 0vh 5vw;
+    //}
+    .container {
+        margin: 5vh 8vw;
+        //min-height: 80vh;
     }
 }
 
 @include respond-to ('big') {
-    .app-wrapper {
-        margin: 0vh 20vw;
+    //.app-wrapper {
+    //    margin: 0vh 10vw;
+    //}
+    .container {
+        margin: 5vh 15vw;
     }
 }
 

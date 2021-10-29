@@ -28,22 +28,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 30px 20px;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
 .form button {
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   -webkit-box-shadow: 3px 3px 6px #a8a8a8, -3px -3px 6px #ffffff;
           box-shadow: 3px 3px 6px #a8a8a8, -3px -3px 6px #ffffff;
   border: 0px;
-  min-width: 75px;
-  font-size: 0.85em;
+  min-width: 50px;
+  font-size: 0.8em;
 }
 
 .form .buttons {
-  padding-left: 20px;
+  margin-left: 40px;
+  margin-right: 0;
 }
 
 .form input {
@@ -55,7 +59,7 @@
   -webkit-box-shadow: inset 9px 9px 18px #c1c1c1, inset -9px -9px 18px #ffffff;
           box-shadow: inset 9px 9px 18px #c1c1c1, inset -9px -9px 18px #ffffff;
   font-size: 1.1em;
-  max-width: 60%;
+  max-width: 72%;
 }
 
 .list {
@@ -82,6 +86,7 @@
 .list .text-item {
   margin: 3px 0;
   text-transform: capitalize;
+  max-width: 90%;
   border: 0px;
   width: 100%;
   padding: 5px 10px;
@@ -93,13 +98,13 @@
 
 .list .btn-delete {
   margin: 3px 0;
-  padding: 10px;
+  padding: 8px;
   border-radius: 8px;
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   -webkit-box-shadow: 3px 3px 6px #a8a8a8, -3px -3px 6px #ffffff;
           box-shadow: 3px 3px 6px #a8a8a8, -3px -3px 6px #ffffff;
   border: 0px;
-  min-width: 75px;
+  min-width: 50px;
 }
 
 .list .trashcan {
@@ -123,14 +128,14 @@
 }
 
 @media (min-width: 1000px) {
-  .app-wrapper {
-    margin: 0vh 10vw;
+  .container {
+    margin: 5vh 8vw;
   }
 }
 
 @media (min-width: 1200px) {
-  .app-wrapper {
-    margin: 0vh 20vw;
+  .container {
+    margin: 5vh 15vw;
   }
 }
 
@@ -153,9 +158,6 @@ body {
   background: linear-gradient(145deg, #f0f0f0, #cacaca);
   -webkit-box-shadow: 36px 36px 73px #acacac, -36px -36px 73px #ffffff;
           box-shadow: 36px 36px 73px #acacac, -36px -36px 73px #ffffff;
-  margin: 5vh 8vw;
-  padding: 20px;
-  min-height: 450px;
 }
 
 .app-wrapper {
@@ -169,7 +171,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-height: 85vh;
+  min-height: 90vh;
 }
 
 .main-title {

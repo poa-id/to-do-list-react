@@ -1,19 +1,24 @@
 .form {
     display:flex;
     justify-content: space-between;
-    margin: 30px 20px;
+    //padding-left: 5vw;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 20px;
+    margin-top: 20px;
     button {
         @include button-styling;
-        font-size: 0.85em;
+        font-size: 0.8em;
 
     }
     .buttons {
-        padding-left: 20px;
+        margin-left: 40px;
+        margin-right: 0;
     }
 
     input {
         @include textbox-styling;
         font-size: 1.1em;
-        max-width: 60%;
+        max-width: 72%;
     }
 }

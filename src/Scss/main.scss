@@ -24,16 +24,15 @@ body {
     background: linear-gradient(145deg, #f0f0f0, #cacaca);
     box-shadow:  36px 36px 73px #acacac,
              -36px -36px 73px #ffffff;
-    margin: 5vh 8vw;
-    padding: 20px;
-    min-height: 450px;
+    //margin: 5vh 8vw;
+    //min-height: 400px;
 }
 
 .app-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: 85vh;
+    min-height: 90vh;
 }
 
 .main-title {

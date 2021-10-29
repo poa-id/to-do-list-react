@@ -29,13 +29,13 @@ $breakpoints: (
 //Set button styling - Mantain here
 
 @mixin button-styling {
-    padding: 10px;
+    padding: 8px;
         border-radius: 8px;
         background: linear-gradient(145deg, #f0f0f0, #cacaca);
         box-shadow:  3px 3px 6px #a8a8a8,
                      -3px -3px 6px #ffffff;
         border: 0px;
-        min-width: 75px;
+        min-width: 50px;
 }
 
 //Set textbox styling - Mantain here

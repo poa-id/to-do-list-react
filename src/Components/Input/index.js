@@ -27,7 +27,7 @@ function Input() {
                 placeholder="Add task..."
                 required />
             <div className="buttons">
-                <button type="submit" className="btn add-task-btn">Add Task</button>
+                <button type="submit" className="btn add-task-btn">Add</button>
                 <button onClick={clearList} className="btn clear-btn">Clear</button>
             </div>
         </form>
