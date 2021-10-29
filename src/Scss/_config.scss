@@ -1,0 +1,70 @@
+$font-stack: 'Raleway', sans-serif;
+$background-color: #ebebeb;
+$accent-color: hsl(0, 5%, 89%);
+
+//Breakpoints
+$breakpoints: (
+    'small': (min-width: 800px),
+    'medium': (min-width: 1000px),
+    'big': (min-width: 1200px),
+);
+
+//Set text color based on background for contrast
+
+@function set-text-color($color) {
+    @if (lightness($color) > 70) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+//Set background and text color
+
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-text-color($color);
+}
+
+//Set button styling - Mantain here
+
+@mixin button-styling {
+    padding: 10px;
+        border-radius: 8px;
+        background: linear-gradient(145deg, #f0f0f0, #cacaca);
+        box-shadow:  3px 3px 6px #a8a8a8,
+                     -3px -3px 6px #ffffff;
+        border: 0px;
+        min-width: 75px;
+}
+
+//Set textbox styling - Mantain here
+
+@mixin textbox-styling {
+    border: 0px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: inset 9px 9px 18px #c1c1c1,
+        inset -9px -9px 18px #ffffff;
+}
+
+//Breakpoints Mixin to get and respond to screen size
+
+@mixin respond-to ($name) {
+    @debug "Test";
+        //If value exists in the map
+    @if map-has-key($breakpoints, $name) {
+        //Prints media query based on the value
+        @media #{map-get($breakpoints, $name)}{
+            //What the media query actually modifies
+            @content;
+        }
+    }
+    //If the key doesn-t exist in the map
+    //@else {
+    //    @warn "No value could be retrieved from `{$breakpoint}`."
+    //    + "Please define it or check spelling in `$breakpoints` map";
+    //}
+}

@@ -1,0 +1,21 @@
+%btn {
+    display:inline-block;
+    border-radius: 10px;
+    padding: 8px 20px;
+    margin: 3px;
+    border: 0px;
+
+    &:hover {
+        transform: scale(0.98);
+    }
+}
+
+.add-task-btn {
+    @extend %btn;
+    @include set-background(lighten($background-color, 10%));
+}
+
+.clear-btn{
+    @extend %btn;
+    @include set-background(lighten($background-color, 10%));
+}

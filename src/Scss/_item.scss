@@ -1,0 +1,33 @@
+.list {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    li {
+        justify-content: center;
+        font-size: 1.1em;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        justify-items: start;
+        align-items: center;
+    }
+
+    .text-item{
+        margin: 3px 0;
+        text-transform: capitalize;
+        @include textbox-styling;
+    }
+    .btn-delete {
+        margin: 3px 0;
+        @include button-styling;
+    }
+    .trashcan {
+        align-self: center;
+        justify-self: end;
+    }
+}
+
+.no-tasks {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}

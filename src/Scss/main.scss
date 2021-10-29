@@ -1,0 +1,42 @@
+@import 'config';
+@import 'buttons';
+@import 'input';
+@import 'item';
+@import 'breakpoints';
+
+
+//Reset
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include set-background($background-color);
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+.container {
+    border-radius: 26px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  36px 36px 73px #acacac,
+             -36px -36px 73px #ffffff;
+    margin: 5vh 8vw;
+    padding: 20px;
+    min-height: 450px;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 85vh;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 20px;
+}

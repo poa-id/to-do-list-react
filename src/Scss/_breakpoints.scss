@@ -1,0 +1,18 @@
+@include respond-to ('small') {
+    .app-wrapper {
+        margin: 0vh 10vw;
+    }
+}
+
+@include respond-to ('medium') {
+    .app-wrapper {
+        margin: 0vh 10vw;
+    }
+}
+
+@include respond-to ('big') {
+    .app-wrapper {
+        margin: 0vh 20vw;
+    }
+}
+
